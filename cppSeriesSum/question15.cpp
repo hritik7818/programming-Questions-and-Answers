@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout << "Enter the value of n :" << endl;
+    cin >> n;
+    float sum = 0;
+    float factorial;
+    for (int i = 1; i <= n; i++)
+    {
+        factorial = 1;
+        for (int j = i; j > 0; j--)
+        {
+            factorial = factorial * j;
+        }
+        sum = sum + (1 / factorial);
+    }
+    cout << "Sum = " << sum << endl;
+    return 0;
+}
